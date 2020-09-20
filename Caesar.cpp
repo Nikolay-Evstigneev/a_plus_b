@@ -8,16 +8,16 @@ int main()
 	string line, otvet, command;
 	char symbol;
 	int sh;
-	cout << "Введите шаг сдвига: ";
+	cout << "Введите шаг сдвига: " << endl;
 	cin >> sh;
 	do
 	{
-		cout << "Введите encode для кодирования или decode для расшифровки: ";
+		cout << "Введите encode для кодирования или decode для расшифровки: "<<endl;
 		cin >> command;
 		if (command == "decode")sh *= -1;
 
 	} while ((command != "encode")and(command != "decode"));
-	cout << "Введите строку: ";
+	cout << "Введите строку: "<<endl;
 	cin >> line;
 	otvet.resize(line.length());
 	for (int i = 0; i < line.length(); i++)
